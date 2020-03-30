@@ -1,0 +1,20 @@
+#sidebar {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: grey
+}
+
+#map {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+#button {
+
+}
