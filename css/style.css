@@ -24,7 +24,6 @@ p.main {
   top: 0;
   left: 0;
   background-color: #B7A9A1;
-  padding: 20px;
 }
 
 #map {
@@ -37,17 +36,20 @@ p.main {
 
 #nextButton {
   position: relative;
-  right: 0;
+  left: 20px;
 }
 
 #lastButton {
   position: relative;
+  left: 20px;
 }
 
 #title {
   color: white;
+  padding: 20px;
 }
 
 #description {
-  color: white
+  color: white;
+  padding: 20px;
 }

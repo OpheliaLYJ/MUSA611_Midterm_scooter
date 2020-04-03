@@ -65,21 +65,21 @@ var longTrip2_style = {
   fillOpacity: 0.8
 };
 
-//This function filter the trips taking place in morning peak hours
+//This function filter the trips taking place in morning peak hours (7-9)
 var morning = function(feature) {
   var morningBegin = moment('1/6/2019 6:59', 'dd/mm/yyyy hh:mm');
   var morningEnd = moment('1/6/2019 9:01', 'dd/mm/yyyy hh:mm');
   return moment(feature.properties.START_TIME, 'dd/mm/yyyy hh:mm').isBetween(morningBegin, morningEnd);
 };
 
-//This function filter the trips taking place in afternoon peak hours
+//This function filter the trips taking place in afternoon peak hours (5-7PM)
 var afternoon = function(feature) {
   var afternoonBegin = moment('1/6/2019 16:59', 'dd/mm/yyyy hh:mm');
-  var afternoonEnd = moment('1/6/2019 20:01', 'dd/mm/yyyy hh:mm');
+  var afternoonEnd = moment('1/6/2019 19:01', 'dd/mm/yyyy hh:mm');
   return moment(feature.properties.START_TIME, 'dd/mm/yyyy hh:mm').isBetween(afternoonBegin, afternoonEnd);
 };
 
-//This function filter the trips taking place during midnight
+//This function filter the trips taking place during midnight (11PM - 5AM)
 var midnight = function(feature) {
   var midnightBegin = moment('1/6/2019 22:59', 'dd/mm/yyyy hh:mm');
   var midnightEnd = moment('1/6/2019 4:59', 'dd/mm/yyyy hh:mm');
